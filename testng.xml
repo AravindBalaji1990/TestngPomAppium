@@ -1,0 +1,15 @@
+<suite name="api demos suite Test Suite">
+
+    <listeners>
+        <listener class-name="utils.listeners.TestListener"/>
+        <listener class-name="utils.listeners.AnnotationTransformer"/>
+    </listeners>
+    <test name="api demos Tests">
+        <parameter name="platformName" value="Android"></parameter>
+        <parameter name="appPackage" value="io.appium.android.apis"></parameter>
+        <parameter name="appActivity" value="io.appium.android.apis.ApiDemos"></parameter>
+        <classes>
+            <class name="Framework.pageTests.HomeTest"></class>
+        </classes>
+    </test>
+</suite>
